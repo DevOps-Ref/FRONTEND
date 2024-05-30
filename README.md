@@ -1,5 +1,7 @@
 [HTML & CSS](https://github.com/DevOps-Ref/FRONTEND/tree/main/HTML%20%26%20CSS)
-Topics
+
+## Topics
+```
         1. Basic HTML Document
                 * Tags
                 * Attributes
@@ -13,3 +15,4 @@ Topics
         * Image
                 * Adjust its height and width
                 * Convert images to hyperlinks
+```
