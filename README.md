@@ -3,8 +3,12 @@
 ## Topics
 ```
         1. Basic HTML Document
-                * Tags
+                * Element(opening Tag + Closing Tag + Tag Content)
                 * Attributes
+                        * class
+                        * id
+                        * name
+                        * id Vs name
                 * Ancestors, siblings
         2. HTML Comments
         3. Hyperlinks
