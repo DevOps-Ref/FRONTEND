@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        action ::
+        method :: POST/GET
+        enctype :: TO divide data into multiple parts and
+
+        INPUT TYPES
+            * text
+            * password
+            * email
+            * tel
+            * date
+            * number
+            * radio
+            * checkbox
+            * file
+            * submit
+        
+        DROPDOWN :: Select tag
+
+        LARGE TEXT :: <textarea></textarea>
+    -->
+    <form
+    action=""
+    method=""
+    enctype="multipart/form-data">
+
+        <!-- 
+            for attribute of label should match id of input
+            This helps to highlight the box when label is clicked
+        -->
+        <label for="username">UserName :: </label>
+        <input 
+        id="username" 
+        type="text"
+        required
+        minlength="6"
+        maxlength="15"
+        placeholder="Saketh227"><br>
+
+        <!-- If type = text the password will not be masked-->
+        <label for="passwd">Password ::</label>
+        <input type="password"><br>
+
+        <label for="">Email :: </label>
+        <input type="email"> <br>
+
+        <label for="">Mobile NO ::</label>
+        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <br>
+
+        <label for="">DOB ::</label>
+        <input type="date"><br>
+
+        <label for="">Quantity::</label>
+        <input type="number"><br>
+
+        <!-- 
+            name :: 
+                * all the radio buttons should have same name to group them
+                * So that only one can be selected
+        -->
+        <label>Title :: </label>
+        <label for="Mr.">Mr.</label>
+        <input id="Mr." type="radio" value="Mr." 
+        name="title">
+
+        <label for="Mrs.">Mrs.</label>
+        <input id="Mrs." type="radio" value="Mrs." name="title"> <br>
+
+        <label>Payment dropdown :: </label>
+        <select>
+            <option value="Visa">Visa</option>
+            <option value="Rupay">Rupay</option>
+            <option value="">Phone Pe</option>
+            <option value="">Google Pay</option>
+            <option value="">Cred</option>
+        </select> <br>
+
+        <label>Check Box</label>
+        <input type="checkbox"> <br>
+        
+        <label>Text area :: </label>
+        <textarea rows="5" cols="35"></textarea>
+
+        <label>File Submission :: </label>
+        <input 
+        type="file" 
+        accept="image/png, image/jpeg">
+
+        <input type="reset">
+        <input type="submit" style="margin: 10px 60px;">
+    </form>
+</body>
+</html>

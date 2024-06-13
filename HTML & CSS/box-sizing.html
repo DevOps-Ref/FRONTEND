@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0px;
+            margin:0px;
+            border: 0px;
+        }
+        div{
+            width:50%;
+            border: 3px solid green;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        div1 occupies 50% of viewport +3px border on each side
+        so the space after div1 is < 50% of viewport
+
+        By default padding
+    -->
+    <div style="padding: 50px;">
+        <h1>This is box1</h1>
+    </div>
+
+    <div>
+        <h1>This is box2</h1>
+    </div>
+    <hr>
+    <div style="box-sizing: border-box; padding: 50px;float: left;">
+        <h1>This is box1</h1>
+    </div>
+
+    <div style="box-sizing: border-box;float: left;">
+        <h1>This is box2</h1>
+    </div>
+    <hr style="clear: both;">
+
+    <div style="box-sizing: border-box;display: inline-block;">
+        <h1>This is box1</h1>
+    </div>
+
+    <div style="box-sizing: border-box; display: inline-block;">
+        <h1>This is box2</h1>
+    </div>
+
+
+</body>
+</html>

@@ -15,8 +15,9 @@
                 * href
                 * target
                 * title
-        * <pre> Vs <p> tags
-        * Image
+        4. <pre> Vs <p> tags
+        5. Image
                 * Adjust its height and width
                 * Convert images to hyperlinks
+        6. Shortcuts
 ```

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        OVERFLOW :: 
+            Property that sets desired behaviour 
+            when the contentdoes not fit parent element box
+
+        overflow: visible  ==> will overflow as usual
+        overflow: hidden ==> no longer visible but can copy every thing
+        overflow:  clip ==> overflow-clip-margin : 5px ==> control the extent of overflow
+        overflow:  scroll ==> implements scroll bar, even though not required
+        overflow: auto  ==> implements scroll only if  required
+    -->
+    <div 
+    style="
+    border: 2px solid green;
+    height: 175px;
+    width: 500px;
+    overflow:scroll;">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima et ab dolor atque beatae ullam, praesentium minus iusto explicabo culpa similique officiis amet quaerat numquam delectus dicta nostrum expedita iste?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum nam dolor neque aperiam aliquam laudantium, exercitationem corrupti ab delectus vitae laborum dignissimos officia libero iusto dolore sapiente natus eum? Velit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quasi autem unde ipsam pariatur cum, ducimus consectetur nostrum expedita molestiae necessitatibus repellendus odit quis! Iusto quas earum sed harum ipsum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quasi autem unde ipsam pariatur cum, ducimus consectetur nostrum expedita molestiae necessitatibus repellendus odit quis! Iusto quas earum sed harum ipsum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quasi autem unde ipsam pariatur cum, ducimus consectetur nostrum expedita molestiae necessitatibus repellendus odit quis! Iusto quas earum sed harum ipsum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quasi autem unde ipsam pariatur cum, ducimus consectetur nostrum expedita molestiae necessitatibus repellendus odit quis! Iusto quas earum sed harum ipsum.</p>
+    </div>
+
+    <div 
+    style="
+    border: 2px solid green;
+    height: 175px;
+    width: 500px;
+    overflow:scroll;">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima et ab dolor atque beatae ullam, praesentium minus iusto explicabo culpa similique officiis amet quaerat numquam delectus dicta nostrum expedita iste?</p>
+    </div>
+
+    <div 
+    style="
+    border: 2px solid green;
+    height: 175px;
+    width: 500px;
+    overflow:auto;">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima et ab dolor atque beatae ullam, praesentium minus iusto explicabo culpa similique officiis amet quaerat numquam delectus dicta nostrum expedita iste?</p>
+    </div>
+</body>
+</html>

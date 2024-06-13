@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 5px;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Lets learn about Absolute Vs Relative length units
+            1. em VS rem
+                em :: relative to parent
+                rem :: relative to root element(html)
+
+            2. vh, vw
+    -->
+    
+    <div style="font-size: 20px;">
+        MY DIV1
+        <!--
+            absolute font-size = 10px
+            absolute width = 100px
+        -->
+        <p style="font-size:10px; width: 100px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum expedita corrupti quia deleniti sapiente, reprehenderit, unde, neque inventore laudantium voluptatibus minima pariatur tempore voluptates et illum quasi numquam dolore quo.</p>
+    </div>
+    <hr>
+    <div style="font-size: 20px; border:3px solid rgb(24, 57, 24);">
+        MY DIV2
+        <!--Relative font-size :: twice that of div = 2*20 px-->
+        <!--Relative width :: 5 times of p font-size = 6*40 px-->
+        <p style="font-size:2em; width: 6em; border:3px solid rgb(98, 0, 155);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum expedita corrupti quia deleniti sapiente, reprehenderit, unde, neque inventore laudantium voluptatibus minima pariatur tempore voluptates et illum quasi numquam dolore quo.</p>
+
+        <!--Relative font-size :: 8 times that of html font-size = 8*5 px-->
+        <!--Relative width :: 20 times that of html font-size = 48*5 px-->
+        <p style="font-size:8rem; width:48rem; border:3px solid rgb(62, 22, 182);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum expedita corrupti quia deleniti sapiente, reprehenderit, unde, neque inventore laudantium voluptatibus minima pariatur tempore voluptates et illum quasi numquam dolore quo.</p>
+        
+        <P style="font-size:200%; width:6em; border:3px solid rgb(62, 22, 182);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ad voluptates non dolore expedita vel. Ullam laboriosam eveniet voluptatum dolorem nihil impedit ut eaque repellat, ducimus fuga! Animi, natus quis.</P>
+        
+        <!-- larger | smaller :: relative to parent font-size -->
+        <P style="border:3px solid rgb(62, 22, 182);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ad voluptates non dolore expedita vel. Ullam laboriosam eveniet voluptatum dolorem nihil impedit ut eaque repellat, ducimus fuga! Animi, natus quis.</P>
+        <P style="font-size:larger; border:3px solid rgb(62, 22, 182);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ad voluptates non dolore expedita vel. Ullam laboriosam eveniet voluptatum dolorem nihil impedit ut eaque repellat, ducimus fuga! Animi, natus quis.</P>
+        <P style="font-size:smaller;  border:3px solid rgb(62, 22, 182);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ad voluptates non dolore expedita vel. Ullam laboriosam eveniet voluptatum dolorem nihil impedit ut eaque repellat, ducimus fuga! Animi, natus quis.</P>
+
+    </div>
+
+    <!-- This always occupy 50% of screen-->
+    <div style="width:50vw; font-size: 40px; border: 3px dotted rgb(41, 166, 208);">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam sed facilis aperiam eaque velit! Itaque libero, sed iure nostrum animi doloribus, amet, et voluptates maxime quis porro eligendi at consectetur!</p>
+    </div>
+</body>
+</html>

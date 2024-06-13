@@ -6,17 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- .mp3  .wav -->
-    <audio src="" 
+    <!-- 
+        audio types supported ==>  .mp3  .wav
+
+        ATTRIBUTES
+            * CONTROLS :: Display Controls to manage adudio
+            * AUTO PLAY :: Play the the audio when page is loaded
+            * muted     :: Mute the audio
+            * LOOP      :: Keep on playing the audio even after completion
+    -->
+    <audio src="Resources\satranga.mp3" 
     controls 
     autoplay 
-    muted 
+    muted
     loop>
 
     </audio>
 
+    <!-- Controls attribute is necessary to display the audio content-->
     <audio>
-        <source src="">
+        <source src="Resources\satranga.mp3">
     </audio>
 </body>
 </html>
