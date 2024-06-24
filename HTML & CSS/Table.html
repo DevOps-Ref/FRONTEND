@@ -27,5 +27,59 @@
             <td>9-5</td>
         </tr>
     </table>
+    <table style="width:100vw;">
+        <tr>
+            <th>FUNCTION</th>
+            <th>MATCH PROPERTIES</th>
+            <th>RETURN TYPES</th>
+        </tr>
+        <tr>
+            <td><b>search</b>(pattern,text,flags)</td>
+            <td>Look into text for <b>first</b> match</td>
+            <td>Match object</td>
+        </tr>
+        <tr>
+            <td><b>match</b>(pattern,text,flags)</td>
+            <td>Look at <b>start</b> of text for a match</td>
+            <td>Match object</td>
+        </tr>
+        <tr>
+            <td><b>finditer</b>(pattern,text,flags)</td>
+            <td>Look into text for <b>multiple</b> match</td>
+            <td>Iterator which  returns Match object</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>findall</b>(pattern, string, flags=0)</td>
+            <td>Look into text for <b>multiple</b> match</td>
+            <td>List</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>fullmatch</b>(pattern, string, flags=0)</td>
+            <td>Pattern should match entire text</td>
+            <td>Match object</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>sub</b>(pattern, repl, string, count=0, flags=0)</td>
+            <td>repl: string | callable(Match object)</td>
+            <td>Rplace pattern</td>
+        </tr>
+        
+        
+  </table>
 </body>
 </html>
